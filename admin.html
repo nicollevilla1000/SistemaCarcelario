@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Personal Administrativo</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <header>
+        <h1>Gestion de Personal Administrativo</h1>
+        <a href="index.html" class="back-button">Regresar al Inicio</a>
+    </header>
+    
+
+    <div class="container">
+        <!-- Formulario para agregar personal -->
+        <section class="form-section">
+            <h2>Agregar Personal</h2>
+            <form id="personalForm">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required>
+
+                <label for="rol">Rol:</label>
+                <select id="rol" required>
+                    <option value="" disabled selected>Seleccionar rol</option>
+                    <option value="Guardia">Guardia</option>
+                    <option value="Médico">Médico</option>
+                    <option value="Psicólogo">Psicólogo</option>
+                </select>
+
+                <label for="permisos">Permisos:</label>
+                <select id="permisos" required>
+                    <option value="" disabled selected>Seleccionar permisos</option>
+                    <option value="Lectura">Lectura</option>
+                    <option value="Escritura">Escritura</option>
+                    <option value="Administración">Administración</option>
+                </select>
+
+                <button type="submit">Agregar Personal</button>
+            </form>
+        </section>
+
+        <!-- Tabla de personal -->
+        <section class="table-section">
+            <h2>Lista de Personal</h2>
+            <table id="personalTable">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Rol</th>
+                        <th>Permisos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Los registros del personal aparecerán aquí -->
+                </tbody>
+            </table>
+        </section>
+    </div>
+    <div class="cards">
+        <div class="card">
+            <h3>Guardia</h3>
+            <p>Se encarga de la seguridad, custodia y vigilancia de los internos, manteniendo el orden y cumpliendo las normas del centro penitenciario.</p>
+        </div>
+        <div class="card">
+            <h3>Medico</h3>
+            <p>Proporciona atención médica a los internos, realizando consultas, tratamientos y seguimientos, tanto para enfermedades físicas como mentales.</p>
+        </div>
+        <div class="card">
+            <h3>Psicólogo</h3>
+            <p>Brinda atención psicológica a los internos, realizando evaluaciones, terapias individuales y grupales, y asesorando en temas relacionados con la salud mental y la reinserción social.</p>
+        </div>
+    </div>
+</div>
+<footer style="text-align: center; margin-top: 40px; padding: 20px; background-color: #10375C; color: white;">
+    <p>Derechos Reservados © 2024</p>
+</footer>   
+
+    <script src="admin.js"></script>
+</body>
+</html>

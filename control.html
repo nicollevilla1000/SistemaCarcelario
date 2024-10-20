@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Visitas</title>
+    <link rel="stylesheet" href="control.css">
+</head>
+<body>
+    <header>
+        <h1>Control de Visitas</h1>
+        <a href="index.html" class="back-button">Regresar al Inicio</a>
+    </header>
+    
+
+    <div class="container">
+
+        <section class="registro">
+            <h2>Registrar Visita</h2>
+            <form id="visitaForm">
+                <label for="visitante">Visitante:</label>
+                <input type="text" id="visitante" required>
+
+                <label for="recluso">Recluso Visitado:</label>
+                <input type="text" id="recluso" required>
+
+                <label for="fecha">Fecha de Visita:</label>
+                <input type="date" id="fecha" required>
+
+                <button type="submit">Registrar Visita</button>
+            </form>
+        </section>
+
+        <!-- Historial de visitas -->
+        <section class="historial">
+            <h2>Historial de Visitas</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Visitante</th>
+                        <th>Recluso Visitado</th>
+                        <th>Fecha</th>
+                    </tr>
+                </thead>
+                <tbody>
+          
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+
+    <div class="info-section">
+        <img src="https://images.pexels.com/photos/6065454/pexels-photo-6065454.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Imagen de Visitas" class="info-image">
+        <div class="cards">
+            <div class="card">
+                <h3>Visitas Familiares</h3>
+                <p>Permite a los familiares visitar a los reclusos de forma controlada.</p>
+            </div>
+            <div class="card">
+                <h3>Historial Completo</h3>
+                <p>Consulta las visitas realizadas y los detalles asociados.</p>
+            </div>
+            <div class="card">
+                <h3>Control de Seguridad</h3>
+                <p>Mantén un control estricto sobre las personas que ingresan al penal.</p>
+            </div>
+        </div>
+    </div>
+    <footer style="text-align: center; margin-top: 40px; padding: 20px; background-color: #10375C; color: white;">
+        <p>Derechos Reservados © 2024</p>
+    </footer>
+    <script src="control.js"></script>
+</body>
+</html>

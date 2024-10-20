@@ -1,0 +1,80 @@
+/* Importamos la fuente */
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+
+/* Estilos globales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding-top: 10px; 
+}
+
+
+header {
+    background-color: #10375C; 
+    color: #ffffff !important; 
+}
+
+header a {
+    color: #ffffff !important; 
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+header a:hover {
+    color: #EB8317 !important; 
+}
+
+
+.navbar-nav {
+    justify-content: center; 
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.25rem;
+}
+
+
+.presentation {
+    background-image: url('carcel.jpg'); 
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+    color: white; 
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    height: 100%;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+
+footer {
+    background-color: #EB8317; 
+    color: white; 
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #ffffff; 
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #3bf816; 
+}
